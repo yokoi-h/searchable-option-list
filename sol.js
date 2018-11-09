@@ -126,7 +126,7 @@
             multiple: undefined,
             resultsContainer: undefined, // jquery element where the results should be appended
             closeOnClick: true, // close when user clicked 'select all' or 'deselect all'
-            showSelectionBelowList: false,
+            showSelectionBelowList: true,
             allowNullSelection: false,
             scrollTarget: undefined,
             maxHeight: undefined,
@@ -898,7 +898,7 @@
                         .html(this.config.texts.quickDelete)
                         .click(function () {
                             $changedItem
-                                .prop('checked', false)
+                                .prop('checked', true)
                                 .trigger('change');
                         })
                         .prependTo($existingDisplayItem);

@@ -37,6 +37,7 @@
 .sol-container * {
     margin: 0;
     padding: 0;
+    display: table;
 }
 
 .sol-inner-container {
@@ -55,6 +56,8 @@
     -moz-transition: border linear .2s, box-shadow linear .2s;
     -o-transition: border linear .2s, box-shadow linear .2s;
     transition: border linear .2s, box-shadow linear .2s;
+    display:table-cell;
+    width: 500px;
 }
 
 .sol-container.sol-active .sol-inner-container {
@@ -74,8 +77,14 @@
     top: 0;
     bottom: 0;
     right: 25px;
+    height: 30px;
 }
 
+.sol-current-selection {
+    display:table-cell;
+    width: 70%;
+    padding-left: 5px;
+}
 .sol-caret-container {
     position: absolute;
     display: inline-block;
